@@ -268,6 +268,9 @@ type Registry struct {
 
 // Register implements Registerer.
 func (r *Registry) Register(c Collector) error {
+	// TODO DEBUG
+	return nil
+	
 	var (
 		descChan           = make(chan *Desc, capDescChan)
 		newDescIDs         = map[uint64]struct{}{}
